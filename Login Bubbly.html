@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="submit.js"></script>
+    </head>
+    <body>
+    <form name="login_form" method="POST" action="/action_page.php">
+    <div class="new"> 
+        <a><p>Login</h2></a>
+        <div>
+            <input id="user" placeholder="Type a name. . . ." maxlength="16">
+            <span>Username</span>
+        </div>
+        <div>
+            <input id="pwd" type="password" placeholder="Type" minlength="8" maxlength="16">
+            <span>Password</span>
+        </div>
+        <div class="sub">
+            <span class="c">Cancle</span> 
+        </div>
+        
+        <div class="sub">
+            <span class="b">Submit</span>   
+        </div>
+    </div>
+      
+    </form> 
+        <style>
+            a{
+                display: flex;
+                width: 20rem;
+                font-size: 2rem;
+                color: #ffffff;
+                padding-bottom: 1rem;
+                padding-left: 11rem;
+            }
+            body{
+                background-color: whitesmoke;
+            }
+            .new{
+                display: block;
+                align-items: center;
+                height: 550px;
+                width: 470px;
+                padding-left: 20%;
+                padding-right: 20%;
+                background-color: rgb(13, 55, 83);
+            }
+            div{
+                position: relative;
+                display: flex;
+                margin-top: 4rem;
+                margin-left: 2rem;
+                height: 4rem;
+                width: 25rem;
+                border: 0;
+                border-radius: 4rem;
+                background: #ffffff;
+            }
+            .sub{
+                position: relative;
+                display: inline-flex;
+                margin: 3.5rem;
+                margin-top: 5rem;
+                height: 4rem;
+                width: 7rem;
+                border: 0;
+                border-radius: 4rem;
+                background: #ffffff;
+            }
+            span{
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                display: grid;
+                place-items: center;
+                height: 3rem;
+                width: 6rem;
+                font-size: 0.875rem;
+                border-radius: inherit;
+                background: #3a8ced;
+                color: #ffffff;
+                pointer-events: none;
+                transition: all 0.35s;
+            }
+            .b{
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                display: grid;
+                place-items: center;
+                height: 3rem;
+                width: 6rem;
+                font-size: 0.875rem;
+                border-radius: inherit;
+                background: limegreen;
+                color: #ffffff;
+                pointer-events: none;
+                transition: all 0.35s;
+            }
+            .c{
+                position: absolute;
+                top: 0.5rem;
+                left: 0.5rem;
+                display: grid;
+                place-items: center;
+                height: 3rem;
+                width: 6rem;
+                font-size: 0.875rem;
+                border-radius: inherit;
+                background: lightcoral;
+                color: #ffffff;
+                pointer-events: none;
+                transition: all 0.35s;
+            }
+            input{
+                flex: 1 1 auto;
+                padding-left: 6.5rem;
+                height: inherit;
+                border: 0;
+                outline: none;
+                background: transparent;
+                font-size: 1rem;
+                text-indent: 0.625rem;
+                transition: all 0.35s;
+                
+            }
+            input::placeholder {color: #9b9ba5;}
+            input:focus {transform: translateX(-6rem);}
+            input:focus ~ span{
+                transform: translateY(-4rem);
+            }
+
+            </style>
+    </body>
+</html>
